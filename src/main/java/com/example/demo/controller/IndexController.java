@@ -38,4 +38,5 @@ public class IndexController {
 		repository.save(calendar);
 		return "redirect:/";
 	}
+	
 }
