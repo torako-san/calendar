@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 body {
-  font-family: 'Courier New', monospace;
   font-size: 14px;
 }
 
@@ -9,6 +8,8 @@ table {
   border-collapse: collapse;
   border: 2px solid #eee;
   margin: 0 auto;
+  width: 1000px;
+  height: 800px;
 }
 
 thead,
@@ -17,8 +18,10 @@ tfoot {
 }
 
 th, td {
+  font-size: 32px;
   padding: 8px;
   text-align: center;
+  margin: 0 auto;
 }
 
 tbody td:first-child {
@@ -45,4 +48,6 @@ td.today {
   cursor: pointer;
   user-select: none;
 }
+
+
 
