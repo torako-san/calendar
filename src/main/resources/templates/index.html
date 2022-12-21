@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="UTF-8" />
-	<title>カレンダー一覧</title>
-	<link rel="stylesheet" href="app.css" />
-</head>
-<body>
-<h1>仮一覧ページ</h1>
-<button><a th:href="@{/add}">新規予定（仮ボタン）</a></button>
-	<!DOCTYPE html>
-<html lang="ja">
-<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +8,15 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+
+<h1>仮一覧ページ</h1>
+<button><a th:href="@{/add}">新規予定（仮ボタン）</a></button>
+<body>
   <table>
     <thead>
       <tr>
         <th id="prev">&laquo;</th>
-        <th id="title" colspan="5">2022/01</th>
+        <th id="title" colspan="5"></th>
         <th id="next">&raquo;</th>
       </tr>
       <tr>
@@ -39,12 +33,12 @@
       
     </tbody>
     <tfoot>
-      <td id="today" colspan="7">Today</td>
+    <tr>
+    	<td id="today" colspan="7">Today</td>
+    </tr>
     </tfoot>
   </table>
   <script src="js/calendar.js"></script>
-</body>
-</html>
 </body>
 </html>
 
