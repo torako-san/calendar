@@ -30,6 +30,7 @@ public class IndexController {
 		return "add";
 	}
 	
+	
 	@PostMapping("/schedule")
 	public String postCalendar(@Validated @ModelAttribute Calendar calendar, BindingResult result) {
 		if (result.hasErrors()) {
@@ -37,6 +38,8 @@ public class IndexController {
 		}
 		repository.save(calendar);
 		return "redirect:/";
+		
+		
 	}
 	
 }
